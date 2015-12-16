@@ -1,0 +1,82 @@
+void setup(){
+size(800,600);
+background(175,55,100);
+fill(100,0,0);
+stroke(300,20,10);
+beginShape(QUADS);
+vertex(120,110);
+vertex(130,130);
+vertex(130,150);
+vertex(220,140);
+endShape(CLOSE);
+beginShape(RECT);
+vertex(100,90);
+vertex(90,150);
+vertex(135,50);
+vertex(70,80);
+endShape(CLOSE);
+
+}
+
+void draw(){
+ // its cat-dog from the old nickelodean
+ // the two moving triangles are the cat's running feet
+  background(100,0,0);
+  fill(170,100,70);
+  quad(mouseX,mouseY,175,300,160,300,155,300);
+  triangle(mouseX,mouseY,180,300,190,300);
+fill(100,0,0);
+ beginShape(TRIANGLE_STRIP);
+vertex(520,280);
+vertex(530,280);
+vertex(530,280);
+vertex(520,280);
+endShape(CLOSE);
+endShape(CLOSE);
+beginShape(RECT);
+vertex(100,90);
+vertex(90,150);
+vertex(135,50);
+vertex(70,80);
+endShape(CLOSE);
+fill(0,0,800);
+line(165,300,300,300);
+line(775,385,900,500);
+fill(170,100,70);
+point(100,50);
+point(200,100);
+triangle(140,235,150,235,145,225);
+triangle(155,235,165,245,160,225);
+fill(170,100,70);
+rect(640,275,70,25);
+rect(620,275,25,90);
+rect(580,275,25,90);
+fill(170,100,70);
+rect(150,275,500,50);
+ellipse(650,275,80,80);
+ellipse(150,275,80,80);
+arc(250,400,120,120,50,HALF_PI);
+arc(1000,500,600,600,0,HALF_PI+.51);
+beginShape(TRIANGLE);
+vertex(545,280);
+vertex(550,285);
+vertex(500,300);
+vertex(550,280);
+beginShape(QUADS);
+vertex(550,285);
+vertex(500,280);
+vertex(570,285);
+vertex(555,275);
+ellipse(650,270,20,80);
+fill(0,0,100);
+ellipse(675,275,20,20);
+ellipse(135,275,20,20);
+ellipse(160,275,20,20);
+fill(200,150,75);
+ellipse(550,280,25,10);
+ellipse(500,280,35,10);
+ellipse(315,290,35,10);
+ellipse(200,300,35,10);
+ellipse(400,315,35,10);
+line(125,300,165,300);
+}
